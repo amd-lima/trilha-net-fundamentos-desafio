@@ -1,3 +1,54 @@
+# 🚗 Desafio Fundamentos - Sistema de Estacionamento
+
+Este projeto simula um sistema de estacionamento de veículos com funcionalidades básicas como cadastrar, listar e remover veículos, além do cálculo de valor a ser pago com base nas horas estacionadas.
+
+## 📸 Demonstração
+
+![Demonstração do sistema](https://github.com/amd-lima/trilha-net-fundamentos-desafio/blob/main/gif.gif)
+
+---
+
+## 📦 Funcionalidades
+
+- ✅ Cadastrar veículos (valida placas duplicadas e vazias)
+- ✅ Remover veículos (com cálculo de valor a pagar)
+- ✅ Listar veículos estacionados
+- ✅ Aplicação colorida via terminal para melhor usabilidade
+
+---
+
+## ✅ Validações
+
+### ➕ Cadastro de veículos
+
+- O sistema **não permite**:
+  - Cadastrar placas já existentes
+  - Cadastrar placas vazias ou com apenas espaços
+
+- Mensagens informativas em cores:
+  🔴 Vermelho para erros (placa inválida ou duplicada)
+  🔵 Ciano para instruções
+  ⚪ Branco para entradas normais
+  🟡Títulos
+  🔘Mensagens do sistema
+  
+
+### ➖ Remoção de veículos
+
+- O sistema **verifica se a placa existe** antes de permitir a remoção.
+- O usuário deve informar a quantidade de horas estacionado, e o sistema calcula o valor com base em:
+  - **Preço inicial**
+  - **Preço por hora**
+- Também são validados:
+  - ❌ Valores não numéricos
+
+---
+
+## 💰 Cálculo do valor
+valorTotal = precoInicial + precoPorHora * horas;
+
+---
+
 # DIO - Trilha .NET - Fundamentos
 www.dio.me
 
